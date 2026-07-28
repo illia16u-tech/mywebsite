@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ToolMarket</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+
+  <body>
+
+<header>
+
+    <h1>🛠 ToolMarket</h1>
+
+    <input 
+    type="text" 
+    id="search" 
+    placeholder="🔎 Пошук товарів..."
+    >
+
+    <div id="cart" onclick="openCart()">
+    🛒 Кошик: <span id="count">0</span>
+</div>
+
+</header>
+
+<section class="banner">
+    <h2>Професійні станки та інструменти</h2>
+    <p>Найкращі ціни в Україні</p>
+</section>
+
+<section class="products" id="products"></section><div id="cartWindow">
+
+    <h2>🛒 Ваш кошик</h2>
+
+    <div id="cartItems"></div>
+
+    <h3>
+        Разом: <span id="total">0</span> грн
+    </h3>
+<button onclick="openAdd()">
+➕ Додати оголошення
+</button>
+ <button onclick="order()">
+    ✅ Оформити замовлення
+</button>
+
+<button onclick="closeCart()">
+    Закрити
+</button>
+
+</div>
+
+<script type="module" src="index.js"></script></body>
+</html><section id="ads"></section><div id="addWindow">
+
+<h2>➕ Нове оголошення</h2>
+
+<input id="adName" placeholder="Назва">
+
+<br><br>
+
+<input id="adPrice" placeholder="Ціна">
+
+<br><br>
+
+<textarea id="adDesc" placeholder="Опис"></textarea>
+
+<br><br>
+
+<button onclick="addAd()">
+Опублікувати
+</button>
+
+<button onclick="closeAdd()">
+Закрити
+</button>
+
+</div>
